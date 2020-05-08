@@ -1,0 +1,94 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:smartfilterbar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core">
+	<smartfilterbar:ControlConfiguration key="Quincena" index="1" label="{i18n>Quincena}" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="idQuincena">
+				<core:Item key="1" text="{i18n>PrimeraQuincena}"/>
+				<core:Item key="2" text="{i18n>SegundaQuincena}"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="Month" index="2" label="{i18n>Fecha}" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="idMonth">
+				<core:Item key="1" text="{i18n>1}"/>
+				<core:Item key="2" text="{i18n>2}"/>
+				<core:Item key="3" text="{i18n>3}"/>
+				<core:Item key="4" text="{i18n>4}"/>
+				<core:Item key="5" text="{i18n>5}"/>
+				<core:Item key="6" text="{i18n>6}"/>
+				<core:Item key="7" text="{i18n>7}"/>
+				<core:Item key="8" text="{i18n>8}"/>
+				<core:Item key="9" text="{i18n>9}"/>
+				<core:Item key="10" text="{i18n>10}"/>
+				<core:Item key="11" text="{i18n>11}"/>
+				<core:Item key="12" text="{i18n>12}"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="Ejercicio" index="3" label="{i18n>Ejercicio}" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="idEjercicio">
+				<core:Item key="2019" text="2019"/>
+				<core:Item key="2020" text="2020"/>
+				<core:Item key="2021" text="2021"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="Alcance" index="4" label="{i18n>Alcance}" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="idAlcance">
+				<core:Item key="1" text="Quincenal"/>
+				<core:Item key="2" text="Mensual"/>
+				<core:Item key="3" text="Anual"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="Real" index="10" label="{i18n>Real}" groupId="ZC_TR_PREV_QUINCENALES_CPResults">
+		<smartfilterbar:customControl>
+			<ComboBox id="idReal">
+				<core:Item key="1" text="Si"/>
+				<core:Item key="2" text="No"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="Prev" index="11" label="{i18n>Prev}" groupId="ZC_TR_PREV_QUINCENALES_CPResults">
+		<smartfilterbar:customControl>
+			<ComboBox id="idPrev">
+				<core:Item key="1" text="Si"/>
+				<core:Item key="2" text="No"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="VarQuin" index="12" label="{i18n>VarQuin}" groupId="ZC_TR_PREV_QUINCENALES_CPResults">
+		<smartfilterbar:customControl>
+			<ComboBox id="idVarQuin">
+				<core:Item key="1" text="Si"/>
+				<core:Item key="2" text="No"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="Diferencia" index="13" label="{i18n>Diferencia}" groupId="ZC_TR_PREV_QUINCENALES_CPResults">
+		<smartfilterbar:customControl>
+			<ComboBox id="idDiferencia">
+				<core:Item key="1" text="Si"/>
+				<core:Item key="2" text="No"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="DisponibleReal" index="14" label="{i18n>DisponibleReal}" groupId="ZC_TR_PREV_QUINCENALES_CPResults">
+		<smartfilterbar:customControl>
+			<ComboBox id="idDisponibleReal">
+				<core:Item key="1" text="Si"/>
+				<core:Item key="2" text="No"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+	<smartfilterbar:ControlConfiguration key="DisponiblePrev" index="15" label="{i18n>DisponiblePrev}" groupId="ZC_TR_PREV_QUINCENALES_CPResults">
+		<smartfilterbar:customControl>
+			<ComboBox id="idDisponiblePrev">
+				<core:Item key="1" text="Si"/>
+				<core:Item key="2" text="No"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+</core:FragmentDefinition>

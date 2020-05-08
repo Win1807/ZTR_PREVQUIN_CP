@@ -1,0 +1,98 @@
+{
+  "welcomeFile": "/test/flpSandbox.html",
+  "routes": [
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "DT_ACCIONA",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "DT_ACCIONA"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "preferLocal": true,
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/sap/ui5/1/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "preferLocal": true
+      },
+      "description": "SAPUI5 dist layer resources"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/sap/bc/lrep",
+      "target": {
+        "type": "destination",
+        "name": "AccionaDev",
+        "entryPath": "/sap/bc/lrep"
+      },
+      "description": "AccionaDev"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/",
+      "target": {
+        "type": "application",
+        "name": "flpsandbox",
+        "preferLocal": true
+      },
+      "description": "Subscribed Fiori LaunchPad"
+    },
+    {
+      "path": "/sap/bc/ui5_ui5",
+      "target": {
+        "type": "destination",
+        "name": "DT_ACCIONA",
+        "entryPath": "/sap/bc/ui5_ui5"
+      },
+      "description": "DT_ACCIONA"
+    },
+    {
+      "path": "/resources/ztr/prev/quin/cp/ztr_prevquin_cp/Component",
+      "target": {
+        "type": "destination",
+        "name": "DT_ACCIONA",
+        "entryPath": "/sap/bc/lrep/flex/data/~aXvBg5wkdmEQUUrTsQS5jnE8HiI=~/ztr.prev.quin.cp.ztr_prevquin_cp.Component?version=1.0.0",
+        "preferLocal": true
+      },
+      "description": "ztr/prev/quin/cp/ztr_prevquin_cp/Component Reuse Library"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}

@@ -1,0 +1,70 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/ztr_prev_quin_srv/$metadata"><edmx:Include Namespace="ZTR_PREV_QUIN_SRV" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ztr_prev_quin_anno_mdl.v1">
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult/p_quincena_real"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult/p_quincena_prev"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult/ID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPParameters/p_quincena_real"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPParameters/p_quincena_prev"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult">
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Sociedad"/><PropertyValue Property="TypeNamePlural" String="Informe Disposiciones Quincenales Operativa Cash Pooling (HAFF)"/></Record>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sociedad"/><PropertyValue Property="Value" Path="CompanyCode"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Nombre de Sociedad"/><PropertyValue Property="Value" Path="CompanyCodeName"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Medium"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Importe Póliza"/><PropertyValue Property="Value" Path="Contract"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount011"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount011"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount011"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount012"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount012"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount012"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount021"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount021"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount021"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount022"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount022"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount022"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount031"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount031"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount031"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount032"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount032"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount032"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount041"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount041"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount041"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount042"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount042"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount042"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount051"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount051"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount051"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount052"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount052"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount052"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount061"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount061"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount061"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount062"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount062"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount062"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount071"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount071"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount071"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RealAmount072"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PrevAmount072"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="VarQuinAmount072"/></Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,41 @@
+{
+	"fileName": "id_1587068789823_114_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "ztr.prev.quin.cp.ztr_prevquin_cp.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "demandPopin",
+		"newValue": false
+	},
+	"selector": {
+		"id": "ztr.prev.quin.cp.ztr_prevquin_cp::sap.suite.ui.generic.template.ListReport.view.ListReport::ZC_TR_PREV_QUINCENALES_CPResults--listReport",
+		"type": "sap.ui.comp.smarttable.SmartTable",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ztr.prev.quin.cp.ztr_prevquin_cp/changes/",
+	"projectId": "ztr.prev.quin.cp.ztr_prevquin_cp",
+	"creation": "2020-04-16T20:26:47.633Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.76.0",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

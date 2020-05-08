@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/UI.xml">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZTR_PREV_QUIN_SRV/$metadata">
+		<edmx:Include Alias="ZTR_PREV_QUIN_SRV" Namespace="ZTR_PREV_QUIN_SRV"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ztr.prev.quin.cp.ztr_prevquin_cp.ZTR_PREV_QUIN_SRV">
+			<!--===============================================================================
+                Entity Type from chosen collection 
+                ================================================================================-->
+			<Annotations Target="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult">
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.CollectionFacet">
+							<PropertyValue Property="ID" String="GeneralInformation"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;@GeneralInfoFacetLabel}"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet">
+										<PropertyValue Property="Label" String="{@i18n&gt;@GeneralInfoFacetLabel}"/>
+										<PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
+									</Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+					</Collection>
+				</Annotation>
+				<!--<Annotation Term="UI.LineItem">-->
+				<!--	<Collection>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="CompanyCode"/>-->
+				<!--			<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="CompanyCodeName"/>-->
+				<!--			<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Medium" />-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="Division"/>-->
+				<!--			<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="DivisionName"/>-->
+				<!--			<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="Contract"/>-->
+				<!--			<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />-->
+				<!--		</Record>-->
+						
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="CurrencyCode2"/>-->
+				<!--			<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Medium" />-->
+				<!--		</Record>-->
+						
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount011"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount011"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount011"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount012"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount012"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount012"/>-->
+				<!--		</Record>-->
+						
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount021"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount021"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount021"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount022"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount022"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount022"/>-->
+				<!--		</Record>-->
+						
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount031"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount031"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount031"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount032"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount032"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount032"/>-->
+				<!--		</Record>-->
+						
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount041"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount041"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount041"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="ARealAmount042"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="APrevAmount042"/>-->
+				<!--		</Record>-->
+				<!--		<Record Type="UI.DataField">-->
+				<!--			<PropertyValue Property="Value" Path="AVarQuinAmount042"/>-->
+				<!--		</Record>-->
+						
+						
+						
+				<!--	</Collection>-->
+				<!--</Annotation>-->
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

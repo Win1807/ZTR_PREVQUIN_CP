@@ -1,0 +1,122 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/></edmx:Reference>
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZTR_PREV_QUIN_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="ZC_TR_PREV_QUINCENALES_CPResult" sap:semantics="aggregate" sap:content-version="1">
+				<Key><PropertyRef Name="ID"/></Key><Property Name="ID" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/><Property Name="CompanyCode" Type="Edm.String" MaxLength="5" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="Sociedad"/><Property Name="CompanyCodeName" Type="Edm.String" MaxLength="30" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="30 Characters" sap:heading=""/><Property Name="Division" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="Division" sap:quickinfo=""/><Property Name="DivisionName" Type="Edm.String" MaxLength="30" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="Nombre de Division" sap:quickinfo="30 Characters"/><Property Name="Contract" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Importe Cash Pooling"/><Property Name="RealAmount011" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Enero 1ª: Real"/><Property Name="PrevAmount011" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="measure" sap:unit="CurrencyCode"
+					sap:label="Enero 1ª: Prevision" sap:filterable="false"/><Property Name="VarQuinAmount011" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Enero 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount012" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Enero 2ª: Real"/><Property Name="PrevAmount012" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Enero 2ª: Previsto"/><Property Name="VarQuinAmount012" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Enero 2ª: Var. Quincenal Prevista"/><Property Name="RealAmount021" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Febrero 1ª: Real"/><Property Name="PrevAmount021" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Febrero 1ª: Previsto"/><Property Name="VarQuinAmount021" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Febrero 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount022" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Febreo 2ª: Real"/><Property Name="PrevAmount022" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Febreo 2ª: Previsto"/><Property Name="VarQuinAmount022" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Febreo 2ª: Var. Quincenal Prevista"/><Property Name="RealAmount031" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Marzo 1ª: Real"/><Property Name="PrevAmount031" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Marzo 1ª: Previsto"/><Property Name="VarQuinAmount031" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Marzo 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount032" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Marzo 2ª: Real"/><Property Name="PrevAmount032" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Marzo 2ª: Previsto"/><Property Name="VarQuinAmount032" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Marzo 2ª: Var. Quincenal Prevista"/><Property Name="RealAmount041" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Abril 1ª: Real"/><Property Name="PrevAmount041" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Abril 1ª: Previsto"/><Property Name="VarQuinAmount041" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Abril 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount042" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Abril 2ª: Real"/><Property Name="PrevAmount042" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Abril 2ª: Previsto"/><Property Name="VarQuinAmount042" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Abril 2ª: Var. Quincenal Prevista"/><Property Name="RealAmount051" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Mayo 1ª: Real"/><Property Name="PrevAmount051" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Mayo 1ª: Previsto"/><Property Name="VarQuinAmount051" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Mayo 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount052" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Mayo 2ª: Real"/><Property Name="PrevAmount052" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Mayo 2ª: Previsto"/><Property Name="VarQuinAmount052" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Mayo 2ª: Var. Quincenal Prevista"/><Property Name="RealAmount061" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Junio 1ª: Real"/><Property Name="PrevAmount061" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Junio 1ª: Previsto"/><Property Name="VarQuinAmount061" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Junio 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount062" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Junio 2ª: Real"/><Property Name="PrevAmount062" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Junio 2ª: Previsto"/><Property Name="VarQuinAmount062" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Junio 2ª: Var. Quincenal Prevista"/><Property Name="RealAmount071" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Julio 1ª: Real"/><Property Name="PrevAmount071" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Julio 1ª: Previsto"/><Property Name="VarQuinAmount071" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Julio 1ª: Var. Quincenal Prevista"/><Property Name="RealAmount072" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Julio 2ª: Real"/><Property Name="PrevAmount072" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension" sap:label="Julio 2ª: Previsto"/><Property Name="VarQuinAmount072" Type="Edm.Decimal" Precision="12" Scale="2" sap:aggregation-role="dimension"
+					sap:label="Julio 2ª: Var. Quincenal Prevista"/><Property Name="CurrencyCode" Type="Edm.String" MaxLength="5" sap:aggregation-role="measure" sap:unit="P7A60191F5E54BCDEA22D8ABAE297FDC4"
+					sap:label="Moneda" sap:quickinfo="Moneda de Sociedad" sap:filterable="false" sap:semantics="currency-code"/><NavigationProperty Name="Parameters" Relationship="ZTR_PREV_QUIN_SRV.assoc_238EE85786007478D13F1B905E47D4F9"
+					FromRole="ToRole_assoc_238EE85786007478D13F1B905E47D4F9" ToRole="FromRole_assoc_238EE85786007478D13F1B905E47D4F9" sap:filterable="false"/></EntityType>
+			<EntityType Name="ZC_TR_PREV_QUINCENALES_CPParameters" sap:semantics="parameters" sap:content-version="1">
+				<Key><PropertyRef Name="p_quincena_real"/><PropertyRef Name="p_quincena_prev"/></Key><Property Name="p_quincena_real" Type="Edm.String" Nullable="false" MaxLength="5" sap:display-format="UpperCase" sap:parameter="mandatory"
+					sap:label="R/2 table" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="p_quincena_prev" Type="Edm.String" Nullable="false" MaxLength="5" sap:display-format="UpperCase" sap:parameter="mandatory"
+					sap:label="R/2 table" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="Results" Relationship="ZTR_PREV_QUIN_SRV.assoc_238EE85786007478D13F1B905E47D4F9"
+					FromRole="FromRole_assoc_238EE85786007478D13F1B905E47D4F9" ToRole="ToRole_assoc_238EE85786007478D13F1B905E47D4F9"/></EntityType>
+			<Association Name="assoc_238EE85786007478D13F1B905E47D4F9" sap:content-version="1"><End Type="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPParameters" Multiplicity="1" Role="FromRole_assoc_238EE85786007478D13F1B905E47D4F9"/><End Type="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult" Multiplicity="*" Role="ToRole_assoc_238EE85786007478D13F1B905E47D4F9"/></Association>
+			<EntityContainer Name="ZTR_PREV_QUIN_SRV_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true"
+				sap:supported-formats="atom json xlsx"><EntitySet Name="ZC_TR_PREV_QUINCENALES_CPResults" EntityType="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPResult" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="ZC_TR_PREV_QUINCENALES_CP" EntityType="ZTR_PREV_QUIN_SRV.ZC_TR_PREV_QUINCENALES_CPParameters" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+				<AssociationSet Name="assoc_238EE85786007478D13F1B905E47D4F9" Association="ZTR_PREV_QUIN_SRV.assoc_238EE85786007478D13F1B905E47D4F9"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="ZC_TR_PREV_QUINCENALES_CP" Role="FromRole_assoc_238EE85786007478D13F1B905E47D4F9"/><End EntitySet="ZC_TR_PREV_QUINCENALES_CPResults" Role="ToRole_assoc_238EE85786007478D13F1B905E47D4F9"/></AssociationSet>
+			</EntityContainer>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="ZTR_PREV_QUIN_SRV.ZTR_PREV_QUIN_SRV_Entities">
+				<Annotation Term="Aggregation.ApplySupported">
+					<Record>
+						<PropertyValue Property="Transformations">
+							<Collection>
+								<String>aggregate</String>
+								<String>groupby</String>
+								<String>filter</String>
+							</Collection>
+						</PropertyValue><PropertyValue Property="Rollup" EnumMember="None"/></Record>
+				</Annotation>
+			</Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="ZTR_PREV_QUIN_SRV.ZTR_PREV_QUIN_SRV_Entities/ZC_TR_PREV_QUINCENALES_CP">
+				<Annotation Term="Capabilities.FilterRestrictions">
+					<Record>
+						<PropertyValue Property="NonFilterableProperties">
+							<Collection>
+								<PropertyPath>p_quincena_real</PropertyPath>
+								<PropertyPath>p_quincena_prev</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Capabilities.NavigationRestrictions">
+					<Record>
+						<PropertyValue Property="RestrictedProperties">
+							<Collection>
+								<Record><PropertyValue Property="NavigationProperty" NavigationPropertyPath="Parameters"/>
+									<PropertyValue Property="FilterRestrictions">
+										<Record><PropertyValue Property="Filterable" Bool="false"/></Record>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Capabilities.SortRestrictions">
+					<Record>
+						<PropertyValue Property="NonSortableProperties">
+							<Collection>
+								<PropertyPath>p_quincena_real</PropertyPath>
+								<PropertyPath>p_quincena_prev</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm"
+				Target="ZTR_PREV_QUIN_SRV.ZTR_PREV_QUIN_SRV_Entities/ZC_TR_PREV_QUINCENALES_CPResults">
+				<Annotation Term="Capabilities.FilterRestrictions">
+					<Record>
+						<PropertyValue Property="NonFilterableProperties">
+							<Collection>
+								<PropertyPath>ID</PropertyPath>
+								<PropertyPath>PrevAmount011</PropertyPath>
+								<PropertyPath>CurrencyCode</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Capabilities.SortRestrictions">
+					<Record>
+						<PropertyValue Property="NonSortableProperties">
+							<Collection>
+								<PropertyPath>ID</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZTR_PREV_QUIN_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZTR_PREV_QUIN_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
